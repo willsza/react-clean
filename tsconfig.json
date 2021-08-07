@@ -1,4 +1,3 @@
-
 {
   "compilerOptions": {
     "target": "es6",
@@ -21,8 +20,5 @@
   },
   "include": [
     "src"
-  ],
-  "exclude": [
-    "src/main/test/cypress"
   ]
 }
