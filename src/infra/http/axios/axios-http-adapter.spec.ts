@@ -1,15 +1,9 @@
 import { AxiosHttpAdapter } from './axios-http-adapter'
-import { HttpPostParams } from '@/data/protocols/http/http-post-client'
-import { mockAxios } from '@/infra/test/mock-axios'
+import { mockAxios } from '@/infra/test'
+import { mockPostRequest } from '@/data/test'
 import axios from 'axios'
-import faker from 'faker'
 
 jest.mock('axios')
-
-const mockPostRequest = (): HttpPostParams<any> => ({
-  url: faker.internet.url(),
-  body: faker.random.objectElement()
-})
 
 type SutTypes = {
   sut: AxiosHttpAdapter,
