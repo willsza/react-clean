@@ -22,7 +22,7 @@ module.exports = {
       exclude: /node_modules/
     }, {
       test: /\.scss$/,
-      user: [{
+      use: [{
         loader: 'style-loader'
       }, {
         loader: 'css-loader',
@@ -39,7 +39,7 @@ module.exports = {
     writeToDisk: true,
     historyApiFallback: true
   },
-  external: {
+  externals: {
     react: 'React',
     'react-dom': 'ReactDOM'
   },
